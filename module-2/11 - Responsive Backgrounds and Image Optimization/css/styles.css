@@ -1,0 +1,10 @@
+:root {
+    --foggy-white: #F5F5F5;
+    --mist: #c7c8ca;
+    --text: #19231b;
+    --text-hover: #314034;
+}
+
+body {
+    font-family: "Mulish", sans-serif;
+}

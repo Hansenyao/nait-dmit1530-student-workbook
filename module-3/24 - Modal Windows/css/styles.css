@@ -1,0 +1,35 @@
+/* Variables */
+
+:root {
+    --emerald: #059669;
+    --white: #f9f9f9;
+    --neutral: #edeae7;
+    --heading: #252b42;
+    --text: #858585;
+}
+
+/* Utility Classes */
+
+.flex-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.sr-only {
+    left: -9999px;
+    position: absolute;
+    top: -9999px;
+}
+
+/* Universal Styles */
+
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
+/* Close Button */
+
+.close svg {
+    width: 1.5rem;
+}

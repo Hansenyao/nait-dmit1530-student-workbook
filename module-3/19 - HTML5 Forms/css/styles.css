@@ -1,0 +1,16 @@
+:root {
+    --material-blue: rgb(26, 115, 232);
+    --form-bg: #f1f1f1;
+    --black: #121212;
+}
+
+/* Universal Styles */
+
+body {
+    color: var(--black);
+    font-family: 'Roboto', sans-serif;
+}
+
+header svg {
+    width: 2rem;
+}

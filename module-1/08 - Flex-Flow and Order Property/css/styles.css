@@ -1,0 +1,10 @@
+:root {
+    --heading: #1f2937;
+    --body: #4b5563;
+    --border: 1px solid #e5e7eb;
+    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}

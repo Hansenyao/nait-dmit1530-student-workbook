@@ -1,0 +1,74 @@
+/*
+
+COLOUR PALETTE
+
+black-green   #1e3932
+active-green  #006241
+pale-grey     #efefef
+
+HEADER STYLES
+
+border-bottom: 1px solid #e7e7e7;
+box-shadow: 0 4px 8px #e7e7e72a;
+
+The basic body styles and button styles have
+been provided to you in the stylesheet below.
+
+*/
+
+body {
+    background: #efefef;
+    color: #1e3932;
+    font-family: 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Button Classes */
+
+.btn {
+    background-color: #1e3932;
+    border: 1px solid #1e3932;
+    border-radius: 3rem;
+    color: #fff;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.btn-outline {
+    background-color: #fff;
+    border: 1px solid #1e3932;
+    color: #1e3932;
+}
+
+.btn:hover {
+    background-color: #006241;
+    color: #fff;
+}
+
+.menu {
+    background-color: #1e3932;
+    border: 1px solid #1e3932;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.85rem;
+    outline: none;
+    text-align: center;
+    transition: all 0.65s ease;
+}
+
+.menu svg {
+    display: block;
+    width: 2rem;
+}
+
+.menu svg path {
+    stroke: #fff;
+}
+
+.menu:hover {
+    background-color: #006241;
+}

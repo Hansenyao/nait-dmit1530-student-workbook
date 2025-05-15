@@ -1,0 +1,9 @@
+:root {
+    --dark: #291e1c;
+    --light: #c4d3d6;
+    --accent: #ebac4e;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}

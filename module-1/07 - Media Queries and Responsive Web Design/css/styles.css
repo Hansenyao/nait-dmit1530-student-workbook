@@ -1,0 +1,12 @@
+/* Variables */
+
+:root {
+    --white: #f8fafc;
+    --black: #0f172a;
+    --accent: #517602;
+    /* Heading Sizes */
+    --sm: 1.44rem;
+    --md: 1.728rem;
+    --lg: 2.074rem;
+    --xl: 2.488rem;
+}
