@@ -21,3 +21,67 @@
     slate:  #334155;
     smoke:  #e2e8f0;
 */
+
+/* We make the color names variables */
+:root {
+    --red:    #b91c1c;
+    --orange: #d97706;
+    --yellow: #eab308;
+    --green:  #16a34a;
+    --blue:   #0284c7;
+    --indigo: #7c3aed;
+    --violet: #a21caf;
+    --slate:  #334155;
+    --smoke:  #e2e8f0;
+}
+
+section {
+    font-size: 2rem;
+    min-width: 16rem;
+    padding: 3rem;
+    text-align: center;
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* section that is the first child of its parent */
+section:first-child {
+    background-color: var(--red);
+}
+
+/* section that is the second child of its type */
+section:nth-of-type(2) {
+    background-color: var(--orange);
+}
+
+/* section that is the last child of its type */
+section:last-of-type {
+    background-color: var(--blue);
+}
+
+/* section element that is the second last of its type in its parent */
+section:nth-last-of-type(2) {
+    background-color: var(--green);
+}
+
+/* All odd-numbered sections */
+section:nth-of-type(odd) {
+    border: 10px solid var(--indigo);
+}
+
+/* first paragraph for each parent */
+p:first-of-type {
+    font-family: sans-serif;
+    text-shadow: 1px 1px 2px var(--slate);
+}
+
+/* section that contains an element of class 'special' */
+section:has(.special) {
+    background-color: var(--violet);
+}
+
