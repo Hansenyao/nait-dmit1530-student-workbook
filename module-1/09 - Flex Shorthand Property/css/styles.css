@@ -5,3 +5,70 @@
     --border: #e2e8f0;
     --background: #f5f5f5;
 }
+
+body {
+    background-color: var(--background);
+}
+
+img {
+    width: 10%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: var(--headings);
+}
+
+code {
+    color: var(--accent);
+}
+
+.container {
+    max-width: 960px;
+    padding: 1rem;
+
+    /* Setting the left and right margins as auto 
+    wiil cause the container to centered in its parent (body element)
+    when the viewpoint become bigger
+    */
+    margin: 0 auto; 
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+section {
+    border: 2px solid var(--border);
+    background-color: var(--background);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+/* Setting the flex property of the 2 sections */
+section:first-child {
+    flex: 3 1 45rem;
+}
+section:nth-child(2) {
+    flex: 1 0 15rem;
+}
+
+@media screen and (min-width: 720px) {
+    .flex-container {
+        flex-direction: row;
+    }
+    section:nth-child(2) {
+        order: -1;
+    }
+}
