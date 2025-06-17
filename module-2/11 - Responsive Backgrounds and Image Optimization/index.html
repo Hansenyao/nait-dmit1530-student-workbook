@@ -1,48 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <!-- Required Meta Tags -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Additional Information -->
-        <meta name="author" content="Your Name | Username on GitHub">
-        <meta name="description" content="This website demonstrates how to create a responsive hero banner and optimal file sizes for web images.">
+    <!-- Additional Information -->
+    <meta name="author" content="Your Name | Username on GitHub">
+    <meta name="description"
+        content="This website demonstrates how to create a responsive hero banner and optimal file sizes for web images.">
 
-        <title>10 - Responsive Backgrounds & Image Optimization</title>
+    <title>10 - Responsive Backgrounds & Image Optimization</title>
 
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 
-        <!-- Stylesheets -->
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
 
-    <body>
+<body>
 
-        <h1>Living Slow</h1>
-        <p>Step into a world where the rolling green fields stretch endlessly into the horizon, shrouded in a gentle morning mist. Let the serene landscapes and the unhurried rhythm of my little rural life inspire a transformation in your own daily life.</p>
-        <a href="#latest" class="btn">Let's Explore</a>
+    <header>
+        <section>
+            <h1>Living Slow</h1>
+            <p>Step into a world where the rolling green fields stretch endlessly into the horizon, shrouded in a gentle
+                morning mist. Let the serene landscapes and the unhurried rhythm of my little rural life inspire a
+                transformation in your own daily life.</p>
+            <a href="#latest" class="btn">Let's Explore</a>
+        </section>
+    </header>
 
-        
-        <h2 id="latest">Latest Articles</h2>
 
-        <h3>Pastoral Landscapes</h3>
-        <p>I always find peace in the simplicity and calm of rural living, like watching the sheep graze peacefully in the hills.</p>
-        <a href="#">Read More &rarr;</a>
+    <main>
+        <section class="latest-articles inner-container">
+            <h2 id="latest">Latest Articles</h2>
 
-        <h3>Garden-to-Table</h3>
-        <p>This is my little slice of culinary paradise, always changing depending upon which vegetables and herbs are growing in the garden.</p>
-        <a href="#">Read More &rarr;</a>
+            <article class="card">
+                <!--Setting the loading property to lazy, means that for images that
+                    are not currently in the viewport, the browser does not need to
+                    wait for them to be in memory before showing the page-->
+                <img src="img/card-lamb.webp" class="card-header" loading="lazy"
+                    alt="A lamb grazing on a grassy hill overlooking sparse buildings">
+                <div class="card-body">
+                    <h3>Pastoral Landscapes</h3>
+                    <p>I always find peace in the simplicity and calm of rural living, like watching the sheep graze
+                        peacefully in the hills.</p>
+                    <a href="#">Read More &rarr;</a>
+                </div>
+            </article>
 
-        <h3>Cheerful Little Blooms</h3>
-        <p>Not long ago, I redesigned a new rose bed behind my greenhouse. The area now produces roses that flower from spring to late autumn.</p>
-        <a href="#">Read More &rarr;</a>
+            <article class="card">
+                <img src="img/card-salad.webp" class="card-header" loading="lazy" alt="An aproned home cook presenting an artisanal salad">
+                <div class="card-body">
+                    <h3>Garden-to-Table</h3>
+                    <p>This is my little slice of culinary paradise, always changing depending upon which vegetables and
+                        herbs are growing in the garden.</p>
+                    <a href="#">Read More &rarr;</a>
+                </div>
+            </article>
 
-    </body>
+            <article class="card">
+                <img src="img/card-roses.webp" class="card-header" loading="lazy" alt="Pale pink rose blooms, opening in the sunlight">
+                <div class="card-body">
+                    <h3>Cheerful Little Blooms</h3>
+                    <p>Not long ago, I redesigned a new rose bed behind my greenhouse. The area now produces roses that
+                        flower from spring to late autumn.</p>
+                    <a href="#">Read More &rarr;</a>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+</body>
 
 </html>
