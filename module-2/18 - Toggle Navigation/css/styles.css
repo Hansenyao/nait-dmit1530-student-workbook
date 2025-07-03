@@ -9,3 +9,51 @@ body {
     color: var(--black);
     font-family: 'Work Sans', sans-serif;
 }
+
+.inner-container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.toggle-btn svg {
+    width: 2rem;
+    display: block;
+}
+
+h1,
+h2 {
+    font-weight: 300;
+}
+
+h1,
+li {
+    white-space: nowrap;
+}
+
+h2 {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+p,
+a {
+    font-size: 1.2rem;
+}
+
+/* Specifying the inner-container inside the hearder */
+header .inner-container {
+    height: 4.25rem;
+    padding: 0.5rem 1rem;
+}
+
+.toggle-btn {
+    background-color: unset;
+    border: unset;
+}
