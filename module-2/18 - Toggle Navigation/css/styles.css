@@ -57,3 +57,115 @@ header .inner-container {
     background-color: unset;
     border: unset;
 }
+
+header {
+    box-shadow: var(--shadow);
+    position: relative;
+}
+
+nav {
+    background-color: #fff;
+    box-shadow: var(--shadow);
+    position: absolute;
+    left: 0;
+    top: 4.25rem;
+    width: 100%;
+    z-index: 10;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: var(--hover);
+}
+
+.collapsed {
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+/* The class expanded is going to reverse the effects of the collapsed class
+   We are going to make the menu appear and disappear by using toggle of this 
+   "expanded" class on the nav element
+*/
+.expanded {
+    max-height: unset;
+    opacity: unset;
+    visibility: visible;
+}
+
+main {
+    background-image: url("../img/hero-sm.webp");
+    background-position: center;
+    background-size: cover;
+    min-height: calc(100vh - 4.25rem);
+
+    /* We make "main a flexbox centered both horizontally and vertically "*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+/* For medium-size screens, we only want to change the background image to the larger and we want to change 
+   the font-size of the h2 and the p element
+*/
+@media screen and (min-width: 720px) {
+    h2 {
+        font-size: 3.1875rem;
+    }
+
+    p {
+        font-size: 1.3125rem;
+    }
+
+    main {
+        background-image: url("../img/hero-lg.webp");
+    }
+}
+/* For larger screens, we want to increase the size of the h2 element further
+   but we also want to have an expanded nemu instead of the hamburger
+*/
+@media screen and (min-width: 1080px) {
+    h2 {
+        font-size: 4rem;
+    }
+    /* In the larger view, we want the hamburger icon to disappear */
+    .toggle-btn {
+        display: none;
+    }
+    nav.collapsed,
+    nav.expanded {
+        visibility: visible;
+        opacity: 1;
+        box-shadow: unset;
+        max-height: unset;
+        width: unset;
+        position: unset;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav a:hover,
+    nav a:focus {
+        background-color: unset;
+        text-decoration: underline;
+    }
+}
