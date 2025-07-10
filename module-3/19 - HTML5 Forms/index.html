@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>18 - Goofle Support</title>
+    <title>19 - Goofle Support</title>
 
     <!-- Additional Information -->
     <meta name="author" content="">
@@ -20,6 +20,143 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Hello, world!</h1>
+    <header>
+        <div class="container">
+            <h1 class="sr-only">Hello, world!</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
+            </svg>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Get Help</a>
+                    </li>
+                    <li>
+                        <a href="#">Get Goofle Help</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <h2>Get Technical Support</h2>
+            <p>Dear citizen: There is a problem with your computer. Fortunately, we are here to help you out.</p>
+            <p>Fill out the super secure form below to get in touch with our experts.(You can trust us)</p>
+            <form>
+
+            <form action="" method="GET">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div>
+                        <label for="full-name">Full Name</label>
+                        <input type="text" name="person-name" id="full-name" placeholder="Ex. Jack Pott" required>
+                    </div>
+                    <div>
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" name="date-of-birth" id="dob" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Sex on Your ID</legend>
+                    <div class="radio">
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">female</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">male</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="gender" id="non-specified">
+                        <label for="non-specified">non-specified</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div>
+                        <label label for="email">Email Address</label>
+                        <input type="email" name="email-address" id="email" placeholder="hello@example.com">
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone-number" id="phone" placeholder="123-456-7890" pattern="\d{3}-\d{3}-\d{4}">
+                        <p>Please use the following format: 123-456-7890</p>
+                    </div>
+                    <div>
+                        <label label for="street">Street Address</label>
+                        <input type="text" name="street-address" id="street">
+                    </div>
+                    <div>
+                        <label label for="city">City</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div>
+                        <label label for="province">Province or Territory</label>
+                        <select name="province" id="province"> 
+                            <option value="">Please Choose an Option</option>
+                            <option value="AB">Alberta</option>
+                            <option value="BC">British Columbia</option>
+                            <option value="MB">Manitoba</option>
+                            <option value="NB">New Brunswick</option>
+                            <option value="NL">Newfoundland and Labrador</option>
+                            <option value="NT">Northwest Territories</option>
+                            <option value="NS">Nova Scotia</option>
+                            <option value="NU">Nunavut</option>
+                            <option value="ON">Ontario</option>
+                            <option value="PE">Prince Edward Island</option>
+                            <option value="QC">Quebec</option>
+                            <option value="SK">Saskatchewan</option>
+                            <option value="YT">Yukon</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="postal">Postal Code</label>
+                        <input type="text" name="postal" id="postal" placeholder="A1A 1A1" pattern="[A-Z]\d[A-Z] \d[A-Z]\d">
+                        <p>Please use the following format: A1A 1A1</p>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Banking Information</legend>
+                    <div>
+                        <label for="website">Your Banking Website</label>
+                        <input type="url" id="website" name="website" placeholder="https://www.somebank.com">
+                    </div>
+                    <div>
+                        <label for="account">Account Number</label>
+                        <input type="number" id="account" name="account" min="1" max="100" step="1">
+                    </div>
+                    <div>
+                        <label for="password">Acount Password</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Verification</legend>
+                    <div>
+                        <label for="secret">What is your darkest secret?</label>
+                        <textarea id="secret" name="secret"></textarea>
+                        <p>Don't worry: we won't use it for nefaious purposes like backmail or anthing. Trust us.</p>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="agree" name="agree">
+                        <label for="agree">I hereby agree to my personal data being stored on servers in Nigeria</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Submit Form</legend>
+                    <div>
+                        <input type="submit" value="submit">
+                        <p>Never give your email address or password to anyone but Goofle. Only we will contact you regarding your submission</p>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Googfle</p>
+        </div>
+    </footer>
 </body>
 </html>

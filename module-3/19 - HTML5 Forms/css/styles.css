@@ -9,8 +9,133 @@
 body {
     color: var(--black);
     font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
 }
 
 header svg {
     width: 2rem;
+    fill: white;
+}
+
+header {
+    background-color: var(--material-blue);
+    color: white;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: var(--black);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 300;
+}
+
+form {
+    background-color: var(--form-bg);
+    margin: 1rem;
+}
+
+.sr-only {
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* We want the elements in the header to be displayed in a row and we also 
+   want the svg and the nav as far apart as possible. We recall that these
+   2 are direct container element in the header
+*/
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* We want the list items containing the a emlements displayed as a row
+   with a gap between them
+*/
+nav ul {
+    display: flex;
+    gap: 1rem;
+}
+nav a {
+    text-decoration: none;
+}
+
+/* We want the label and input in each div on the form to appear as column */
+form div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1.5rem 0;
+    gap: 0.5rem;
+}
+
+form p {
+    margin-top: 0.5rem;
+}
+
+.radio,
+.check {
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 0.5rem auto; 
+}
+
+input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]),
+select,
+textarea {
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+    margin: 2rem 1rem;
+}
+
+section p {
+    margin: 1rem 0;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+legend {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+input[type="submit"] {
+    background-color: var(--material-blue);
+    color: var(--form-bg);
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+}
+
+@media screen and (min-width:800px) {
+    fieldset {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    form div {
+        width: calc((100% - 4rem)/2);
+    }
+
+    .radio,
+    .check {
+        width: 100%;
+    }
+    
 }
