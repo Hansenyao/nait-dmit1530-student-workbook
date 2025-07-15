@@ -76,11 +76,11 @@
                     <legend>Contact Information</legend>
                     <div>
                         <label label for="email">Email Address</label>
-                        <input type="email" name="email-address" id="email" placeholder="hello@example.com">
+                        <input type="email" class="validation" name="email-address" id="email" placeholder="hello@example.com" required>
                     </div>
                     <div>
                         <label for="phone">Phone Number</label>
-                        <input type="tel" name="phone-number" id="phone" placeholder="123-456-7890" pattern="\d{3}-\d{3}-\d{4}">
+                        <input type="tel" class="validation" name="phone-number" id="phone" placeholder="123-456-7890" pattern="\d{3}-\d{3}-\d{4}">
                         <p>Please use the following format: 123-456-7890</p>
                     </div>
                     <div>
@@ -89,7 +89,7 @@
                     </div>
                     <div>
                         <label label for="city">City</label>
-                        <input type="text" name="city" id="city">
+                        <input type="text" name="city" id="city" required>
                     </div>
                     <div>
                         <label label for="province">Province or Territory</label>
@@ -112,7 +112,7 @@
                     </div>
                     <div>
                         <label for="postal">Postal Code</label>
-                        <input type="text" name="postal" id="postal" placeholder="A1A 1A1" pattern="[A-Z]\d[A-Z] \d[A-Z]\d">
+                        <input type="text" name="postal" id="postal" placeholder="A1A 1A1" pattern="[A-Z]\d[A-Z] \d[A-Z]\d" required>
                         <p>Please use the following format: A1A 1A1</p>
                     </div>
                 </fieldset>

@@ -8,3 +8,127 @@
     --md-text: 2.0625rem;
     --sm-text: 0.85rem;
 }
+
+header{
+    background-color: var(--nav);
+    color: var(--white);
+}
+
+main{
+    background-color: var(--white);
+    color:var(--main-text)
+}
+
+.sr-only{
+    visibility:hidden;
+    position:absolute;
+}
+
+form{
+   background-color:var(--main-text);
+   padding:2rem;
+   display:flex;
+   gap:0;
+   justify-content:centr;
+   width:100%;
+}
+
+/*This container contains the h1, the nav, the toggle button
+as well as the form*/
+header .flex-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:baseline;
+    padding:1rem;
+    padding-bottom:0rem;
+}
+
+.toggle-btn{
+    color:var(--nav-accent);
+    padding:0.25rem;
+    border: 3px solid var(--white);
+    background-color: var(--nav);
+    border-radius:4px;
+}
+
+nav ul{
+    display:flex;
+    gap:1rem;
+}
+
+a{
+    text-decoration:none;
+}
+
+/*Styling the input element of type search*/
+input[type="search"]{
+    width:80%;
+    border:none;
+    padding:0.5rem;
+}
+
+/*styling the input element of type submit*/
+input[type="submit"]{
+    background-color: var(--nav-accent);
+    color:var(--white);
+    border:none;
+    /*We make the 2 right corners a little rounded*/
+    border-radius: 0 4px 4px 0;
+}
+
+.collapsed{
+    visibility:hidden;
+    height:0;
+    opacity:0;
+}
+
+/*The class below will be toggled to the form to make it appear and disappear*/
+.expanded{
+   visibility:visible;
+   height:unset;
+   opacity:unset;
+}
+
+.inner-container{
+    max-width:960px;
+    margin:0 auto;
+    padding:1rem;
+}
+
+section{
+    padding-bottom:2rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    height:50vh;
+    gap:0.5rem;
+    align-items:flex-start;
+}
+
+h2{
+    font-size:var(--lg-text);
+    font-weight:300;
+}
+
+.lead,
+h1{
+    font-size:var(--md-text);
+}
+
+.lead{
+    color:var(--accent);
+}
+
+section p,
+section a{
+    margin-bottom:1rem;
+    font-size:1.2rem;
+}
+
+.btn{
+    background-color: var(--nav);
+    color:var(--white);
+    padding:0.5rem 1rem;
+    border-radius:4px;
+}

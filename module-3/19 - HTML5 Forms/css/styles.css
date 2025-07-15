@@ -47,6 +47,17 @@ form {
     margin: 0 auto;
 }
 
+.validation:valid {
+    background:url("../img/check.svg") right center/ 1.5rem no-repeat;
+}
+
+/*The field must not be shown as invalid if we have not yet input a value*/
+.validation:invalid:not(:placeholder-shown):not(:focus) {
+    background: url("../img/cross.svg") right center/ 1.5rem no-repeat;
+}
+
+
+
 /* We want the elements in the header to be displayed in a row and we also 
    want the svg and the nav as far apart as possible. We recall that these
    2 are direct container element in the header
