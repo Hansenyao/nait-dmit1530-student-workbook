@@ -23,13 +23,35 @@
     </head>
 
     <body>
-
-        <h1>Welcome to GameMates!</h1>
-
-        <p>Join the ultimate community of gamers where you can find your perfect gaming companions. Whether you're gearing up for intense battles in Call of Duty or looking for friendly farmers to join you in Stardew Valley, GameMates connects you with players who share your passion and playstyle.</p>
-
-        <p>Sign up now to create your profile, connect with fellow gamers, and never play alone again. With GameMates, the perfect gaming buddy is just a click away!</p>
-
+        <main class="inner-container">
+            <section>
+                <div class="introduction">
+                    <h1>Welcome to GameMates!</h1>
+                    <p>Join the ultimate community of gamers where you can find your perfect gaming companions. Whether you're gearing up for intense battles in Call of Duty or looking for friendly farmers to join you in Stardew Valley, GameMates connects you with players who share your passion and playstyle.</p>
+                    <p>Sign up now to create your profile, connect with fellow gamers, and never play alone again. With GameMates, the perfect gaming buddy is just a click away!</p>
+                </div>
+                <form action="index.html" method="GET">
+                    <fieldset>
+                        <legend>Create Your Account</legend>
+                        <div>
+                            <label for="">Username</label>
+                            <input type="text" id="username" name="username" placeholder="Your Username" maxlength="24" aria-describedby="username-help" required>
+                            <p class="help" id="username-help">Your username can be a maximum of 24 characters</p>
+                        </div>
+                        <div>
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="hello@example.com" required>
+                            <p class="help" id="email-help">We will only use your email address for account-related notifications</p>
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" aria-describedby="password-help" required>
+                            <p class="help" id="password-help">our password must contain one uppercase letter, one lowercase letter, a number or special character, and be at least 8 characters long.</p>
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="Sign Up" id="submit" name="submit">
+                </form>
+            </section>
+        </main>
     </body>
-
 </html>
