@@ -15,4 +15,60 @@ section {
     margin: auto;
     max-width: 960px;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section p {
+    text-align: center;
+}
+
+.toggle-btn svg {
+    width: 2rem;
+    font-weight: bold;
+}
+
+.toggle-btn button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--indigo);
+    color: white;
+    width: 100%;
+}
+
+.collapsed {
+    visibility: hidden;
+    position: absolute;
+}
+
+.expanded {
+    visibility: visible;
+    position: unset;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 3rem;
+    width: 100%;
+}
+
+.accordion-content p {
+    text-align: left;
+}
+
+h1 {
+    font-size: 3.6rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+/* When the toggle-button class has an immediate sibling that has the class [expanded],
+   we styyle the svg that is its descendant by rotating it by 45deg
+*/
+.toggle-btn:has(+ .expanded) svg {
+    transform: rotate(45deg);
 }

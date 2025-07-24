@@ -1,3 +1,25 @@
 body {
     color: #222;
 }
+
+.inner-container{
+    margin:auto;
+    max-width:64rem;
+    padding:2rem 1rem;
+
+}
+
+h1,
+h2,
+.btn,
+.lead{
+    font-family:"Roboto Condensed", sans-serif;
+
+}
+
+h1,h2{
+    margin-bottom:1rem;
+}
+h2{
+    font-size:2rem;
+}
