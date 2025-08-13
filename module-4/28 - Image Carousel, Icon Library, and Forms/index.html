@@ -1,81 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Additional Information -->
-        <meta name="author" content="">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
+    <!-- Additional Information -->
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
 
-        <title>28 - Image Carousel, Icon Library, and Forms</title>
-        
-        <!-- Bootstrap CSS -->
+    <title>28 - Image Carousel, Icon Library, and Forms</title>
 
-        <!-- Bootstrap Icon Library -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
-    </head>
+    <!-- Bootstrap Icon Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <body>
-        Save the Animals
+    <!--Bootstrap Javascript Link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"
+        defer></script>
 
+</head>
+
+<body>
+    <header class="container d-flex align-items-center justify-content-between flex-wrap py-5">
+        <h1 class="me-3"><i class="bi bi-camera-video-off me-2"></i>Save the Animals</h1>
         <!-- Navigation -->
+        <nav>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#" class="nav-link active bg-dark">Sign The Petition</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark">Attend a Rally</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        Sign The Petition
-
-        Attend a Rally
-
-        Donate
-
+    <main>
         <!-- Carousel -->
-
-        <!-- Slide 1 -->
-
-        <h2>Stop Stock Photographers</h2>
-
-        <p class="lead">Every year, dozens of animals are humiliated for the sake of stock photos.</p>
-
-
-        <!-- Slide 2 -->
-        <h2>Pets deserve dignity.</h2>
-
-        <p class="lead">Animals are our companions, not playthings to dress up for our amusement.</p>
-
-
-        <!-- Slide 3 -->
-        <h2>Do your part.</h2>
-
-        <p class="lead">Limit your consumption of unethical stock photographs by refusing to purchase licenses for images of cats in tiny party hats or dogs in adorable sunglasses.</p>
+        <div id="carouselExampleCaptions" data-bs-ride="carousel" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                    aria-label="slide 1" class="active"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="slide 3"></button>
+            </div>
+            <!--Set of all slides-->
+            <div  class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <img src="img/la-la-fifi.webp" alt="Basically A War Crime" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Stop Stock Photographers</h2>
+                        <p class="lead">Every year, dozens of animals are humiliated for the sake of stock photos.</p>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <img src="img/shiba-smile.webp" alt="A Mockery of Oral Hygiene" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Pets deserve dignity.</h2>
+                        <p class="lead">Animals are our companions, not playthings to dress up for our amusement.</p>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <img src="img/mr-bigglesworth.webp" alt="Animals are not for our Amusement" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Do your part.</h2>
+                        <p class="lead">Limit your consumption of unethical stock photographs by refusing to purchase
+                            licenses for images of
+                            cats in tiny party hats or dogs in adorable sunglasses.</p>
+                    </div>
+                </div>
+            </div> <!--End of slides set-->
+            <buton type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" class="carousel-control-prev">
+                <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+            </buton>
+            <buton type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" class="carousel-control-next">
+                <span aria-hidden="true" class="carousel-control-next-icon" ></span>
+                <span class="visually-hidden">Next</span>
+            </buton>
+        </div><!--End of Carousel-->
 
 
         <!-- Main Content -->
-        <h1>Sign the Petition</h1>
+        <section class="container my-5">
 
-        <p>Let the government know that we will not stand for Big Stock Photography's shady lobbying practices and backroom deals. As a civilized nation, we must stop the needless onslaught of hamsters with tiny cupcakes and birds with cute little bow ties. We demand change, and we demand it <em>now</em>.</p>
+            <div class="row justify-content-center"> <!--This div will be a row-->
+                <!--This div will be a column-->
+                <div class="col-md-10 col-lg-8 col-xxl-6">
+                    <h2 class="display-4">Sign the Petition<i class="bi bi-vector-pen"></i></h2>
+                    <p>Let the government know that we will not stand for Big Stock Photography's shady lobbying
+                        practices and
+                        backroom
+                        deals. As a civilized nation, we must stop the needless onslaught of hamsters with tiny cupcakes
+                        and birds
+                        with
+                        cute little bow ties. We demand change, and we demand it <em>now</em>.</p>
+                    <!-- Form -->
+                    <form action="" class="mt-5">
+                        <div class="mb-3">
+                            <label for="userName">Your Name</label>
+                            <input type="text" id="userName" name="userName" class="form-control">
+                        </div>
 
+                        <div class="mb-3">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" araia-decribedby="email-help" class="form-control">
+                            <!-- Disclaimer -->
+                            <p id="email-help">
+                                We'll never share your email with anyone else. Except maybe Frank's Used Car Lot,
+                                Farmers
+                                Only, or the Church of
+                                Scientology.
+                            </p>
+                        </div>
 
-        <!-- Form -->
-        Your Name
+                        <!-- Checkbox -->
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" id="check" name="check" value="TRUE" class="form-check-input">
+                            <label for="check">Sign me up for the thrice-daily newsletter and wholly unnecessary
+                                campaign updates.
+                            </label>
+                        </div>
+                        <input type="submit" id="submit" name="submit" value="Sign Now" class="btn btn-dark py-2 px-4">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        Email Address
+    <!-- Footer -->
 
-        <!-- Disclaimer -->
-        We'll never share your email with anyone else. Except maybe Frank's Used Car Lot, Farmers Only, or the Church of Scientology.
-
-        <!-- Checkbox -->
-        Sign me up for the thrice-daily newsletter and wholly unnecessary campaign updates.
-
-
-        <!-- Footer -->
-
-        <h2>&copy;
-            <script>document.write(new Date().getFullYear())</script> Stop Stock Photographers
-        </h2>
-
-        <p>SSP is a registered non-profit organisation. … what, did you think this was a parody? Is everything a joke to you?</p>
-    </body>
+    <footer class="footer py-5 bg-secondary">
+        <div class="container text-center text-white-50">
+            <h2 class="fs-5">&copy;
+                <script>document.write(new Date().getFullYear())</script> Stop Stock Photographers
+            </h2>
+            <p>SSP is a registered non-profit organisation. … what, did you think this was a parody? Is everything a
+                joke to
+                you?</p>
+        </div>
+    </footer>
+</body>
 
 </html>
